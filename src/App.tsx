@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   const [starting, setStarting ] = useState(0);
   const [income, setIncome]  = useState(0);
   const [expenses, setExpenses ]  = useState(0);
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate] = useState(new Date());
   const [dateList, setDateList] = useState< (string | number)[][] | undefined>();
 
   useEffect(()=>{
